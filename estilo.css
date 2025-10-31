@@ -1,0 +1,82 @@
+:root{
+    --purple-header: #3c2aa6;
+    --bg-main: #7feaf0;
+    --panel-cyan: #9feff3;
+    --card-bg: #d9f7fb;
+}
+
+html,body{
+    height:100%;
+    margin:0;
+    background: var(--bg-main);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.site-header{
+    background: var(--purple-header);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.header-title{
+    color: #fff;
+    font-weight:700;
+    font-size:1.15rem;
+}
+
+.login-card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,250,250,0.9));
+    border-radius: 10px;
+}
+
+.bg-light-cyan{
+    background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.35));
+    border: 1px solid rgba(0,0,0,0.06);
+    border-left: 6px solid rgba(60,42,166,0.12);
+    border-radius: 6px;
+}
+
+.product-card{
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+.product-card img{
+    height:120px;
+    object-fit:cover;
+}
+
+.invoice-card{
+    background: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.table input[type="number"]{
+    width: 80px;
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+@media (max-width: 767px){
+    .product-card img{ height: 100px; }
+    .header-title{ font-size: 1rem; }
+}
+
+.product-card img {
+    width: 100%;         
+    height: 180px;        
+    object-fit: cover;     
+    object-position: center; 
+    border-radius: 6px;    
+    transition: transform 0.3s ease; 
+}
+
+.product-card img:hover {
+    transform: scale(1.03);
+}
+
+
+.main-wrap{ padding-bottom: 60px; }
